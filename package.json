@@ -1,0 +1,35 @@
+{
+  "name": "hfors.com",
+  "version": "1.0.0",
+  "description": "This is a backend for app Hfors",
+  "main": "app.ts",
+  "type": "commonjs",
+  "scripts": {
+    "start": "node ./dist/app.js",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "watch": "tsc.cmd -w",
+    "start2": "nodemon ./dist/app.js",
+    "dev": "npm-run-all --parallel watch start2"
+  },
+  "author": "Arush P",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/bcrypt": "^5.0.0",
+    "@types/express": "^4.17.14",
+    "@types/jsonwebtoken": "^8.5.9",
+    "nodemon": "^2.0.20",
+    "npm-run-all": "^4.1.5",
+    "ts-node": "^10.9.1",
+    "typescript": "^4.8.4"
+  },
+  "dependencies": {
+    "bcrypt": "^5.0.1",
+    "dotenv": "^16.0.3",
+    "express": "^4.18.1",
+    "express-async-errors": "^3.1.1",
+    "http-status-codes": "^2.2.0",
+    "joi": "^17.6.2",
+    "jsonwebtoken": "^8.5.1",
+    "mongoose": "^6.6.4"
+  }
+}
